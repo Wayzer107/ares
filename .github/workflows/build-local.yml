@@ -1,4 +1,4 @@
-name: Build
+name: Buildlocal
 on:
   workflow_dispatch:
   push:
