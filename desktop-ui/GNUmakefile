@@ -19,7 +19,7 @@ endif
 
 ifeq ($(local),true)
   ifeq ($(arch),amd64)
-    flags += -march=native
+    flags += -march=native -O3
   endif
 endif
 
@@ -37,7 +37,7 @@ hiro.path := ../hiro
 hiro.resource := resource/ares.rc
 include $(hiro.path)/GNUmakefile
 
-profile := performance
+profile := accuracy
 cores := fc sfc n64 sg ms md ps1 pce ng msx cv gb gba ws ngp
 #cores += saturn
 
