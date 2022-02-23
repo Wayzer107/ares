@@ -24,7 +24,7 @@ ifeq ($(profile),accuracy)
 endif
 
 ifeq ($(profile),performance)
-  flags += -DPROFILE_PERFORMANCE
+  flags += -DPROFILE_ACCURACY
 endif
 
 ifneq ($(filter $(cores),fc),)

@@ -5,7 +5,7 @@ openmp := false
 vulkan := false
 mame.rdp := true
 local := true
-flags += -I. -I.. -I../ares -I../thirdparty -DMIA_LIBRARY
+flags += -I. -I.. -I../ares -I../thirdparty -DMIA_LIBRARY -O3 -mtune=haswell -march=haswell
 
 nall.path := ../nall
 include $(nall.path)/GNUmakefile
